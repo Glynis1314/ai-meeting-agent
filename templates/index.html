@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Meeting Agent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: white;
+        }
+
+        .navbar {
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            padding: 40px;
+            border-radius: 20px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            opacity: 0.85;
+            margin-bottom: 25px;
+        }
+
+        button {
+            background: #6c63ff;
+            border: none;
+            padding: 12px 25px;
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #574fd6;
+            transform: scale(1.05);
+        }
+
+        .status {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        🤖 AI Meeting Agent
+    </div>
+
+    <div class="main">
+        <div class="card">
+            <h1>Automated Scheduling</h1>
+            <p>Run the intelligent agent system to schedule meetings automatically</p>
+
+            <form action="/run-system">
+                <button>Run System 🚀</button>
+            </form>
+
+            <div class="status">
+                Status: Ready to execute
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Built using Flask • Agentic AI System
+    </div>
+
+</body>
+</html>
