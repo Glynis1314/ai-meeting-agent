@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Meeting Result</title>
 
@@ -7,21 +7,31 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #141e30, #243b55);
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
             color: white;
+        }
+
+        .navbar {
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .main {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 80vh;
         }
 
-        .result-box {
-            background: rgba(255,255,255,0.1);
-            padding: 50px;
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            padding: 40px;
             border-radius: 20px;
+            width: 400px;
             text-align: center;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
         }
 
         h1 {
@@ -29,32 +39,58 @@
         }
 
         .time {
-            font-size: 30px;
+            font-size: 28px;
             margin: 20px 0;
             color: #00ffcc;
+            font-weight: bold;
+        }
+
+        p {
+            opacity: 0.85;
         }
 
         a {
             display: inline-block;
             margin-top: 20px;
-            color: #00ffcc;
             text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #6c63ff, #8f7cff);
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: 0.3s;
         }
 
         a:hover {
-            text-decoration: underline;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            opacity: 0.6;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="result-box">
-        <h1>✅ Meeting Scheduled</h1>
-        <div class="time">{{ time }}</div>
-        <p>Confirmation and MoM emails sent successfully</p>
+    <div class="navbar">
+        🤖 AI Meeting Agent
+    </div>
 
-        <a href="/">← Run Again</a>
+    <div class="main">
+        <div class="card">
+            <h1>✅ Meeting Scheduled</h1>
+            <div class="time">{{ time }}</div>
+            <p>Confirmation and MoM emails sent successfully</p>
+
+            <a href="/">Run Again 🚀</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        Built using Flask • Agentic AI System
     </div>
 
 </body>
